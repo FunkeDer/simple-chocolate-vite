@@ -4,81 +4,464 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/simple-chocolate-vite/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Simple Chocolate</title>
     
     <script type="module" crossorigin src="/simple-chocolate-vite/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/simple-chocolate-vite/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/simple-chocolate-vite/assets/index-85305257.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header>
+      <div class="container">
+    <nav class="navigation-bar">
+        <ul class="navigation-list">
+            <li>
+                <a href="/index.html" class="navigation-logo"><span class="navigation-logo-span">SIMPLY</span> CHOCOLATE<img width="24" height="24" src="/simple-chocolate-vite/assets/logo-153919d8.svg" alt="logo"></a>
+            </li>
+        </ul>
+        <ul class="navigation-list links">
+            <li><a href="">Home</a></li>
+            <li><a href="#process">How it’s made?</a></li>
+            <li><a href="#loved-section">Chocolate is loved</a></li>
+        </ul>
+        <ul class="navigation-list icons">
+            <li><a href="#"><img src="/simple-chocolate-vite/assets/instagram-86e3b2b2.svg" alt="inst"></a></li>
+            <li><a href="#"><img src="/simple-chocolate-vite/assets/facebook-999c5251.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="/simple-chocolate-vite/assets/twitter-7d4612cf.svg" alt="twitter"></a></li>
+        </ul>
+        <svg class="mobile-menu-button-svg" height="28" width="28" id="mobile_open">
+            <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#mobile-menu"></use>
+        </svg>
+    </nav>
+    <div class="mobile-menu-container" id="mobile_container">
+        <svg width="28" height="28" class="mobile-svg" id="mobile_close">
+            <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#modal-close">
+            </use>
+        </svg>
+            <ul class="mobile-menu-links">
+                <li class="mobile-menu-item" ><a href=""><p id="mobile_nav_item" onclick="closeMobileMenu()">Home</p></a></li>
+                <li class="mobile-menu-item" ><a href="#process"  ><p id="mobile_nav_item" onclick="closeMobileMenu()">How it’s made?</p></a></li>
+                <li class="mobile-menu-item" ><a href="#loved-section"><p id="mobile_nav_item" onclick="closeMobileMenu()">Chocolate is loved</p></a></li>
+            </ul>
+            <ul class="mobile-menu-social">
+                <li class="mobile-menu-link-item">
+                    <svg class="mobile-link-svg" height="20" width="20">
+                        <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#instagram-white"></use>
+                    </svg>
+                </li>
+                <li class="mobile-menu-link-item">
+                    <svg class="mobile-link-svg" height="20" width="20">
+                        <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#facebook-white"></use>
+                    </svg>
+                </li>
+                <li class="mobile-menu-link-item">
+                    <svg class="mobile-link-svg" height="20" width="20">
+                        <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#twitter-white"></use>
+                    </svg>
+                </li>
+            </ul>
+</div>
+</div>
+    </header>
+    <main>
+      <section >
+    <div class="container">
+        <div class="hero-section">
+            <div class="start-page">
+                <h1 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
+                    <div class="start-link-section">
+                        <ul class="hero-ul ">
+                            <li class="start-li-navigation"><a href="" class="start-li-navigation-a">Buy now</a></li>
+                            <li class="start-li-navigation-second"><a href="" class="start-li-navigation-a" >How it’s made</a></li>
+                        </ul>
+                        <ul class="hero-ul">
+                            <li><p>scroll down</p></li>
+                            <li>
+                                <div class="navigation-elipse">
+                                    <svg class="arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6508 12.2835C11.5656 12.3694 11.4642 12.4376 11.3525 12.4842C11.2408 12.5307 11.121 12.5547 11 12.5547C10.879 12.5547 10.7592 12.5307 10.6475 12.4842C10.5358 12.4376 10.4344 12.3694 10.3492 12.2835L6.15084 8.076C6.06562 7.99008 5.96424 7.92189 5.85253 7.87535C5.74083 7.82881 5.62102 7.80485 5.50001 7.80485C5.37899 7.80485 5.25918 7.82881 5.14748 7.87535C5.03577 7.92189 4.93439 7.99008 4.84917 8.076C4.67844 8.24775 4.58261 8.48008 4.58261 8.72225C4.58261 8.96442 4.67844 9.19675 4.84917 9.3685L9.05668 13.576C9.5723 14.091 10.2713 14.3802 11 14.3802C11.7288 14.3802 12.4277 14.091 12.9433 13.576L17.1509 9.3685C17.3202 9.19776 17.4157 8.96731 17.4167 8.72684C17.4174 8.6062 17.3943 8.4866 17.3486 8.37492C17.303 8.26324 17.2358 8.16166 17.1509 8.076C17.0656 7.99008 16.9643 7.92189 16.8525 7.87535C16.7408 7.82881 16.621 7.80485 16.5 7.80485C16.379 7.80485 16.2592 7.82881 16.1475 7.87535C16.0358 7.92189 15.9344 7.99008 15.8492 8.076L11.6508 12.2835Z" fill="#FD9222"/>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
+</section>
+      <section id="benefits" class="benefits-section">
+    <div class="container benefits-container">
+        <h2 class="visually-hidden">Benefits</h2>
+    <ul class="benefits-ul">
+        <li class="benefits-ul-li">
+            <img src="/simple-chocolate-vite/assets/hero-chocolate-142870a7.svg" alt="hero-chocolate" width="62px" height="62px" class="benefits-img">
+            <h3>Unsurpassed taste</h3>
+            <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
+        </li>
+        <div class="vl"></div>
+        <li class="benefits-ul-li">
+            <img src="/simple-chocolate-vite/assets/money-hero-aa88b93e.svg" alt="money-hero" width="62px" height="62px" class="benefits-img">
+            <h3>Affordable price</h3>
+            <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
+        </li>
+        <div class="vl"></div>
+        <li class="benefits-ul-li">
+            <img src="/simple-chocolate-vite/assets/spoon-hero-05d48e0e.svg" alt="spoon-hero" width="62px" height="62px" class="benefits-img">
+            <h3>Own production</h3>
+            <p>We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
+        </li>
     </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/simple-chocolate-vite/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+</div>
+</section>
+      <section class="ingredients-section section-padding">
+    <div class="container">
+        <h2 class="ingredients-text">IT ALL ADDS UP TO ONE <br> EXCEPTIONAL <span style="color: #FD9222;">TASTE</span> SENSATION</h2>
+        <p class="ingredients-titles description">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
+    <div class="ingredients-container">
+        <ul class="ingredients-ul">
+            <li class="ingredients-item">
+                <img class="ingredients-arrow-img" src="/simple-chocolate-vite/assets/arrow-white-531b0d7b.svg" alt="" width="24" height="24">
+                <img class="ingredients-img" src="/simple-chocolate-vite/assets/milk-chocolate-34ef350b.svg" alt="milk-chocolate" width="214" height="160">
+                <h3>MILK CHOCOLATE</h3>
+                <div class="ingredients-overlay">
+                    <h3 class="overlay-title">Milk chocolate</h3>
+                    <div class="overlay-button-container">
+                        <button type="button" class="overlay-button orange">chocolate</button>
+                        <button type="button" class="overlay-button white">the benefits</button>
+                    </div>
+                    <p class="overlay-paragraph">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
+                </div>
+            </li>
+            <li class="ingredients-item">
+                <img class="ingredients-arrow-img" src="/simple-chocolate-vite/assets/arrow-orange-e77a0825.svg" alt="" width="24" height="24">
+                <img class="ingredients-img" src="/simple-chocolate-vite/assets/milk-571e2c24.svg" alt="milk" width="214" height="160">
+                <h3>MILK</h3>
+                <div class="ingredients-overlay">
+                   <h3 class="overlay-title">MILK</h3>
+                   <div class="overlay-button-container">
+                   <button type="button" class="overlay-button orange" >milk</button>
+                   <button type="button" class="overlay-button white">the benefits</button>
+                </div>
+                   <p class="overlay-paragraph">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
+                </div>
+            </li>
+            <li class="ingredients-item">
+                <img class="ingredients-arrow-img" src="/simple-chocolate-vite/assets/arrow-white-531b0d7b.svg" alt="" width="24" height="24">
+                <img class="ingredients-img" src="/simple-chocolate-vite/assets/nuts-bcd33c6b.svg" alt="nuts" width="214" height="160">
+                <h3>NUTS</h3>
+                <div class="ingredients-overlay">
+                  <h3 class="overlay-title">Nuts</h3>
+                  <div class="overlay-button-container">
+                  <button type="button" class="overlay-button orange">chocolate</button>
+                  <button type="button" class="overlay-button white">the benefits</button>
+                </div>
+                  <p class="overlay-paragraph">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p> 
+                </div>
+            </li>    
+            <li class="ingredients-item">
+                <img class="ingredients-arrow-img" src="/simple-chocolate-vite/assets/arrow-orange-e77a0825.svg" alt="" width="24" height="24">
+                <img class="ingredients-img" src="/simple-chocolate-vite/assets/semi-sweet-85590055.svg" alt="" width="214" height="160">
+                <h3>SEMI - SWEET CHOCOLATE</h3>
+                <div class="ingredients-overlay">
+                 <h3 class="overlay-title">SEMI - SWEET CHOCOLATE</h3>
+                 <div class="overlay-button-container">
+                 <button type="button" class="overlay-button orange">sweet chocolate</button>
+                 <button type="button" class="overlay-button white">the benefits</button>
+                </div>
+                 <p class="overlay-paragraph">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. </p>  
+                </div>
+            </li>
+            <li class="ingredients-item">
+                <img class="ingredients-arrow-img" src="/simple-chocolate-vite/assets/arrow-white-531b0d7b.svg" alt="" width="24" height="24">
+                    <img class="ingredients-img" src="/simple-chocolate-vite/assets/cacao-587709b6.svg" alt="cacao" width="214" height="160">
+                    <h3>CACAO</h3>
+                <div class="ingredients-overlay">
+                  <h3 class="overlay-title">CACAO</h3>
+                  <div class="overlay-button-container">
+                  <button type="button" class="overlay-button orange">cacao</button>
+                  <button type="button" class="overlay-button white">the benefits</button>
+                </div>
+                  <p class="overlay-paragraph">Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals</p>  
+                </div>
+            </li>
+            <li class="ingredients-item">
+                <img class="ingredients-arrow-img" src="/simple-chocolate-vite/assets/arrow-orange-e77a0825.svg" alt="" width="24" height="24">
+                    <img class="ingredients-img" src="/simple-chocolate-vite/assets/raspberry-95549b97.svg" alt="raspberry" width="214" height="160">
+                    <h3>RASPBERRY</h3>
+                <div class="ingredients-overlay">
+                 <h3 class="overlay-title">RASPBERRY</h3>
+                 <div class="overlay-button-container">
+                 <button type="button" class="overlay-button orange">RASPBERRY</button>
+                 <button type="button" class="overlay-button white">the benefits</button>
+                </div>
+                 <p class="overlay-paragraph">Raspberry is a tasty and aromatic berry plant that is popular all over the world. It belongs to the pink family and grows in many regions, including North America, Europe and Asia. Raspberries have many varieties and color variations, from red to yellow and black.</p>   
+                </div>
+            </li>
+            <li class="ingredients-item">
+                <img class="ingredients-arrow-img" src="/simple-chocolate-vite/assets/arrow-white-531b0d7b.svg" alt="" width="24" height="24">
+                <img class="ingredients-img" src="/simple-chocolate-vite/assets/coconut-c4303b1c.svg" alt="coconut" width="214" height="160">
+                <h3>COCONUT OIL</h3>
+                <div class="ingredients-overlay">
+                  <h3 class="overlay-title">COCONUT OIL</h3>
+                  <div class="overlay-button-container">
+                  <button type="button" class="overlay-button orange">coconut oil</button>
+                  <button type="button" class="overlay-button white">the benefits</button>
+                </div>
+                  <p class="overlay-paragraph">Coconut oil is a vegetable oil obtained from the pulp of the fruit of the coconut palm (Cocos nucifera). It is widely used in cooking, cosmetics and medicine, thanks to its numerous useful properties. Coconut oil is a source of saturated fats, especially medium-chain fatty acids, such as lauric acid.</p> 
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+      <section class="production-section section-padding" id="process">
+    <div class="container">
+    <h2 class="products-h2">HOW IT’S <span style="color: #FD9222;">MADE?</span></h2>
+    <div class="production-start-container">
+        <picture class="production-picture">
+            <source srcset="/simple-chocolate-vite/assets/chocolate-cooking-phone-0ce9de0c.jpg "
+            media="(max-width: 768px)"
+            >
+            <img class="production-image" src="/simple-chocolate-vite/assets/chocolate-b99ae148.jpg" alt="chocolate">
+        </picture>
+        <div class="recepie-container"> 
+            <h3 class="production-ul-h3">Try  our chocolates today and <br> discover the perfect balance of flavor</h3>
+            <ul class="production-ul">
+                <li>
+                    <svg class="circle-icon-svg" width="8" height="8"><use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#circle"></use></svg>
+                    Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
+                <li><svg class="circle-icon-svg" width="8" height="8"><use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#circle"></use></svg>At the same time, prepare a water bath. Melt the butter on it.</li>
+                <li><svg class="circle-icon-svg" width="8" height="8"><use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#circle"></use></svg>"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
+                <li><svg class="circle-icon-svg" width="8" height="8"><use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#circle"></use></svg>Heat the mixture over low heat, letting it barely boil.</li>
+                <li><svg class="circle-icon-svg" width="8" height="8"><use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#circle"></use></svg>Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+      <section class="products section-padding">
+    <div class="container">
+    <h2 class="products-h2">OUR <span style="color: #FD9222;">PRODUCTS</span></h2>
+    <ul class="products-ul">
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/orange-a1ddbe12.jpg" alt="orange-chocolate"><h3>orange </h3><p>Dark chocolate</p> <button type="button" class="products-button">45 UAH</button></li>
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/apple-b360913e.jpg" alt="apple-chocolate"><h3>APPLE&CRANBERRY</h3><p>Milk chocolate</p> <button type="button" class="products-button">50 UAH</button></li>
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/lime-salt-bfe7cc69.jpg" alt="lime-salt-chocolate"><h3>lime&sea salt</h3><p>Dark chocolate</p> <button type="button" class="products-button">66 UAH</button></li>
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/pineapple-107ee3a3.jpg" alt="pineapple-chocolate"><h3>pineapple</h3><p>Dark chocolate</p> <button type="button" class="products-button">54 UAH</button></li>
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/classic-7d5ef36a.jpg" alt="classic-chocolate"><h3>Classic</h3><p>Milk chocolate</p> <button type="button" class="products-button">45 UAH</button></li>
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/honey-6c000d68.jpg" alt="honey-chocolate"><h3>honey</h3><p>Milk chocolate</p> <button type="button" class="products-button">50 UAH</button></li>
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/roasted-6455aef5.jpg" alt="roasted-chocolate"><h3>Roasted fruits</h3><p>Dark chocolate</p> <button type="button" class="products-button">66 UAH</button></li>
+        <li class="products-ul-li"><img class="products-ul-li-img" src="/simple-chocolate-vite/assets/classic-white-02ae4c2c.jpg" alt="classic-white-chocolate"><h3>Classic</h3><p>White chocolate</p> <button type="button" class="products-button">54 UAH</button></li>
+    </ul>
+</div>
+</section>
+      <section class="sellers-section section-padding">
+    <div class="container">
+    <h2><span style="color: #FD9222;">top </span>sellers</h2>
+    <ul class="sellers-ul">
+        <li class="sellers-ul-li">
+            <div class="sellers-overlay">
+                <img src="/simple-chocolate-vite/assets/chocolate-with-nuts-d7f64d0e.jpg" alt="chocolate-with-nuts">
+                <div class="sellers-overlay-p">
+                    <p class="" >Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
+                </div>
+            </div>
+            <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>        
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="sellers-ul-li">
+            <div class="sellers-overlay">
+                <img src="/simple-chocolate-vite/assets/chocolate-with-fruits-9d674032.jpg" alt="chocolate-with-nuts">
+                <p class="sellers-overlay-p">Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
+            </div>
+            <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>        
         </li>
-      </ul>
+        <li class="sellers-ul-li">
+            <div class="sellers-overlay">
+                <img src="/simple-chocolate-vite/assets/dark-fruits-dea7e67e.jpg" alt="chocolate-with-nuts">
+                <p class="sellers-overlay-p">Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
+            </div>
+            <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>        
+        </li>
+    </ul>          
+</div> 
+</section>
+      <section class="loved-section section-padding" id="loved-section ">
+    <div class="container">
+    <h2><span style="color: #FD9222;">chocolate</span> is loved</h2>
+
+    <div class="swiper-container">
+        <div class="loved-ul swiper-wrapper" >
+            <div class="loved-ul-li swiper-slide">
+                <div  class="temlapte-img-container">
+                    <img src="/simple-chocolate-vite/assets/victoria-355b8263.svg" alt="victoria">
+                </div>
+                <h3 class="loved-ul-li-name">Victoria Dobrzhanska</h3>
+                <p class="loved-ul-li-p">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+            </div>
+            <div class="loved-ul-li swiper-slide">
+                <div class="temlapte-img-container">
+                    <img src="/simple-chocolate-vite/assets/nazar-881b367a.svg" alt="nazar">
+                </div>
+                <h3 class="loved-ul-li-name">Nazar Babenko</h3>
+                <p class="loved-ul-li-p">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+            </div>
+            <div class="loved-ul-li swiper-slide">
+                <div class="temlapte-img-container">
+                    <img src="/simple-chocolate-vite/assets/olena-290b2212.svg" alt="olga">
+                </div>
+                <h3 class="loved-ul-li-name">Olena Kampusch</h3>
+                <p class="loved-ul-li-p">Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/simple-chocolate-vite/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
+    <div class="button-container">
+    <button type="button" class="loved-button" id="module_open" onclick="">Leave a review</button>
+</div>
+</div>
 </section>
 
+    </main>
+    <footer>
+      <section class="footer">
+    <div class="container">
+    <div class="footer-container ">
+        <h2 class="footer-container-h2"><span style="color: #FD9222;">Chocolate</span> a delicious cure for a bad day</h2>
+        <div class="footer-links">
+            <div class="footer-social-networks">
+            <p class="footer-text contact" >Social networks</p>
+            <ul>
+                <li><img src="/simple-chocolate-vite/assets/inst-white-cdc7bc8a.svg" alt="instagram" width="24" height="24"></li>
+                <li><img src="/simple-chocolate-vite/assets/face-white-8024e491.svg" alt="facebook" width="24" height="24"></li>
+                <li><img src="/simple-chocolate-vite/assets/twitter-white-3df635d4.svg" alt="twitter" width="24" height="24"></li>
+            </ul>
+        </div>
+        <div class="footer-contacts-container">
+            <p class="footer-text contact">Contact us</p>
+            <address class="footer-address">
+                <ul class="footer-address-ul">
+                    <li><a href="tel:380684439426">+380 (68) 443-94-26</a></li>
+                    <li><a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
+                </ul>
+            </address>
+        </div>
+    </div>
+    </div>
+        <hr>
+        <nav class="footer-nav">
+            <ul class="footer-ul">
+                <li><a href="">Home</a></li>
+                <li><a href="#process">How it’s made?</a></li>
+                <li><a href="">Chocolate is loved</a></li>
+            </ul>
+            <form class="footer-input-container">
+            <input placeholder="Enter your email" type="email" class="footer-input" required>
+            <button type="submit" class="footer-button" >Subscribe</button>
+            </form>
+        </nav>
+    </div>
+</section>
+
+    </footer>
+    <dialog class="backdrop-container overflow" id="backdrop_container">
+    <div class="container">
+        <div class="form-container">
+            <svg width="28" height="28" class="modal-svg-close" id="module_close">
+                <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#modal-close"></use>
+            </svg>
+            <h3 class="modal-text">LEAVE A REVIEW ABOUT <span class="modal-span-text">OUR CHOCOLATE</span></h3>
+            <form action="" class="modal-from">
+                <div class="modal-input-block">
+                    <label class="modal-label" for="user-name">Name</label>
+                    <div class="modal-input-container">
+                        <input type="text" class="modal-input" id="user-name" name="user-name" placeholder="Enter your name" required>
+                        <svg class="modal-svg-input" width="24" height="24">
+                            <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#modal-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-input-block">
+                    <label class="modal-label" for="user-email">Email</label>
+                    <div class="modal-input-container">
+                        <input type="email" class="modal-input" id="user-email" name="user-email" placeholder="Enter your email address" required>
+                        <svg class="modal-svg-input" width="24" height="24">
+                            <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#modal-letter"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-input-block">
+                    <label class="modal-label" for="user-phone">Phone</label>
+                    <div class="modal-input-container">
+                        <input type="tel" class="modal-input" id="user-phone" name="user-phone"  placeholder="Enter your phone number" required>
+                        <svg class="modal-svg-input" width="24" height="24">
+                            <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#modal-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-input-block">
+                    <label for="modal-textarea" class="modal-label">Comment</label>
+                    <textarea name="modal-textarea" id="modal-textarea" class="modal-textarea" placeholder="Enter text"></textarea>
+                </div>
+                <div class="module-privacy-container">
+                    <input type="checkbox" id="user-privacy" value="true" name="user-privacy" class="modal-checkbox visually-hidden">
+                    <label for="user-privacy" class="modal-privacy-label">
+                        <span class="modal-span">
+                            <svg class="modal-svg" width="11" height="11    ">
+                                <use href="/simple-chocolate-vite/assets/icons-61033c1d.svg#modal-tick"></use>
+                            </svg>
+                        </span><p>I accept the terms and conditions of the  <a href="" class="modal-form-checkbox-ladel-label-a"> Privacy Policy</a></p> 
+                   </label>
+                </div>
+                <button type="submit" class="module-submit-button">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+</dialog>
+    <div class="up-button-container">
+    <button class="up-button" type="button"  id="myBtn">
+        <svg class="up-arrow" width="30" height="30" viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.6508 12.2835C11.5656 12.3694 11.4642 12.4376 11.3525 12.4842C11.2408 12.5307 11.121 12.5547 11 12.5547C10.879 12.5547 10.7592 12.5307 10.6475 12.4842C10.5358 12.4376 10.4344 12.3694 10.3492 12.2835L6.15084 8.076C6.06562 7.99008 5.96424 7.92189 5.85253 7.87535C5.74083 7.82881 5.62102 7.80485 5.50001 7.80485C5.37899 7.80485 5.25918 7.82881 5.14748 7.87535C5.03577 7.92189 4.93439 7.99008 4.84917 8.076C4.67844 8.24775 4.58261 8.48008 4.58261 8.72225C4.58261 8.96442 4.67844 9.19675 4.84917 9.3685L9.05668 13.576C9.5723 14.091 10.2713 14.3802 11 14.3802C11.7288 14.3802 12.4277 14.091 12.9433 13.576L17.1509 9.3685C17.3202 9.19776 17.4157 8.96731 17.4167 8.72684C17.4174 8.6062 17.3943 8.4866 17.3486 8.37492C17.303 8.26324 17.2358 8.16166 17.1509 8.076C17.0656 7.99008 16.9643 7.92189 16.8525 7.87535C16.7408 7.82881 16.621 7.80485 16.5 7.80485C16.379 7.80485 16.2592 7.82881 16.1475 7.87535C16.0358 7.92189 15.9344 7.99008 15.8492 8.076L11.6508 12.2835Z"/>
+        </svg>
+</button>
+</div>
+
+    <!--EXAMPLE <section >
+    <div class="container">
+        <div class="hero-section">
+            <div class="start-page">
+                <h1 class="hero-title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
+                    <div class="start-link-section">
+                        <ul class="hero-ul ">
+                            <li class="start-li-navigation"><a href="" class="start-li-navigation-a">Buy now</a></li>
+                            <li class="start-li-navigation-second"><a href="" class="start-li-navigation-a" >How it’s made</a></li>
+                        </ul>
+                        <ul class="hero-ul">
+                            <li><p>scroll down</p></li>
+                            <li>
+                                <div class="navigation-elipse">
+                                    <svg class="arrow" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6508 12.2835C11.5656 12.3694 11.4642 12.4376 11.3525 12.4842C11.2408 12.5307 11.121 12.5547 11 12.5547C10.879 12.5547 10.7592 12.5307 10.6475 12.4842C10.5358 12.4376 10.4344 12.3694 10.3492 12.2835L6.15084 8.076C6.06562 7.99008 5.96424 7.92189 5.85253 7.87535C5.74083 7.82881 5.62102 7.80485 5.50001 7.80485C5.37899 7.80485 5.25918 7.82881 5.14748 7.87535C5.03577 7.92189 4.93439 7.99008 4.84917 8.076C4.67844 8.24775 4.58261 8.48008 4.58261 8.72225C4.58261 8.96442 4.67844 9.19675 4.84917 9.3685L9.05668 13.576C9.5723 14.091 10.2713 14.3802 11 14.3802C11.7288 14.3802 12.4277 14.091 12.9433 13.576L17.1509 9.3685C17.3202 9.19776 17.4157 8.96731 17.4167 8.72684C17.4174 8.6062 17.3943 8.4866 17.3486 8.37492C17.303 8.26324 17.2358 8.16166 17.1509 8.076C17.0656 7.99008 16.9643 7.92189 16.8525 7.87535C16.7408 7.82881 16.621 7.80485 16.5 7.80485C16.379 7.80485 16.2592 7.82881 16.1475 7.87535C16.0358 7.92189 15.9344 7.99008 15.8492 8.076L11.6508 12.2835Z" fill="#FD9222"/>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section> -->
+    <!-- Loads the specified .html file -->
+   
 
     
   </body>
