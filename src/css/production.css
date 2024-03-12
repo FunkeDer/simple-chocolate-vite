@@ -1,0 +1,55 @@
+.production-section h2{
+    text-align: center;
+    margin-bottom: 50px;
+ }
+ 
+ .production-start-container{
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+     justify-content: center;
+ align-items: center;
+ }
+ 
+ .production-img{
+     min-height: 400px;
+ }
+ 
+ .recepie-container{
+     max-width: 516px;
+     max-height: 400px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 15px;
+     background: #FFF;
+ }
+ 
+ .production-ul{
+     gap: 24px;
+     display: flex;
+     flex-direction: column;
+     list-style-type: disc;
+     padding: 0 32px 32px 32px;
+ }
+ 
+ .circle-icon-svg{
+     position: absolute;
+     left: -16px;
+     top: 5px;
+     fill: #4C4C4C;
+     stroke-width: 1px;
+ 
+ }
+ 
+ .production-ul li{
+     list-style: circle;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     margin-left: 16px;
+     color: #111;
+     font-size: 14px;
+     font-style: normal;
+     line-height: 1.29; /* 128.571% */
+     letter-spacing: -0.02em;
+ }

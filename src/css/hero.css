@@ -1,0 +1,69 @@
+.start-page{
+    border-radius: 30px;
+    background-color: rgba(17, 17, 17, 0.60);
+    padding: 381px 40px 40px 40px;
+    background-image: url(../img/chocolate-hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-title{
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 121.429% */
+    letter-spacing: -0.84px;
+    max-width: 484px;
+    margin-bottom: 32px;
+}
+
+.start-link-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    
+}
+.start-link-section p{
+    color: #FFF;
+}
+.start-li-navigation{
+    background-color: #FD9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    
+}
+
+.start-li-navigation-second{
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    padding: 14px 40px;
+}
+
+.start-li-navigation-a{
+    color: #FFF;
+}
+
+.navigation-elipse{
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    margin: 0;
+    padding: 0;
+}
