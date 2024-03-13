@@ -10,10 +10,7 @@ margin-bottom: 91px;
 }
 
 .loved-ul{
-    display: flex;
-    gap: 28px;
-    justify-content: center;
-    margin: 50px 0;
+ margin: 20px 0;
 }
 
 .loved-ul-li{
@@ -64,6 +61,7 @@ margin-bottom: 91px;
     display: flex;
     justify-content: center;
     padding-bottom: 120px;
+    margin-top: 50px;
 }
 
 .loved-button{
@@ -89,4 +87,22 @@ margin-bottom: 91px;
     transition: 0.3s;
     background-color: #FD9222;
     color:  #fff;
+}
+
+.swiper-slide {
+
+    border-radius: 15px;
+}
+  
+.swiper-pag{
+    position: relative;
+}
+
+  .swiper-pagination-bullet-active {
+    background-color: #FD9222;
+
+  }
+  
+.mySlider{
+    
 }
