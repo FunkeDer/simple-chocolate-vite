@@ -28,3 +28,7 @@
 .section-padding{
   padding-top: 120px;
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}

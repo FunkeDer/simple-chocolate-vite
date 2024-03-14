@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container ">
     <nav class="navigation-bar">
         <ul class="navigation-list">
             <li>
@@ -18,34 +18,36 @@
         <!-- <svg class="mobile-menu-button-svg" height="28" width="28" id="mobile_open" style="fill: black;">
             <use href="./img/icons8-menu.svg" ></use>
         </svg> -->
-        <img src="./img/icons8-menu.svg" class="mobile-menu-button-svg" alt="mobile-menu-icon" height="28px" width="28px" id="mobile_open">
+        <img src="./img/icons8-menu.svg" class="mobile-menu-button-svg" alt="mobile-menu-icon" onclick="" height="28px" width="28px" id="mobile_open">
     </nav>
-    <div class="mobile-menu-container" id="mobile_container">
-        <svg width="28" height="28" class="mobile-svg" id="mobile_close">
-            <use href="../img/icons.svg#modal-close">
-            </use>
-        </svg>
-            <ul class="mobile-menu-links">
-                <li class="mobile-menu-item" ><a href=""><p id="mobile_nav_item" onclick="closeMobileMenu()">Home</p></a></li>
-                <li class="mobile-menu-item" ><a href="#process"  ><p id="mobile_nav_item" onclick="closeMobileMenu()">How it’s made?</p></a></li>
-                <li class="mobile-menu-item" ><a href="#loved-section"><p id="mobile_nav_item" onclick="closeMobileMenu()">Chocolate is loved</p></a></li>
-            </ul>
-            <ul class="mobile-menu-social">
-                <li class="mobile-menu-link-item">
-                    <svg class="mobile-link-svg" height="20" width="20">
-                        <use href="./img/icons.svg#instagram-white"></use>
-                    </svg>
-                </li>
-                <li class="mobile-menu-link-item">
-                    <svg class="mobile-link-svg" height="20" width="20">
-                        <use href="./img/icons.svg#facebook-white"></use>
-                    </svg>
-                </li>
-                <li class="mobile-menu-link-item">
-                    <svg class="mobile-link-svg" height="20" width="20">
-                        <use href="./img/icons.svg#twitter-white"></use>
-                    </svg>
-                </li>
-            </ul>
-</div>
+    <div class="mobile-menu-backdrop">
+        <div class="mobile-menu-container mobile-menu-hidden visually-hidden" id="mobile_container">
+                <svg width="28" height="28" class="mobile-svg" id="close-button"  >
+                    <use href="../img/icons.svg#modal-close">
+                    </use>
+                </svg>
+                <ul class="mobile-menu-links">
+                    <li class="mobile-menu-item"><a href="../index.html"><p id="mobile_nav_item" >Home</p></a></li>
+                    <li class="mobile-menu-item"><a href="#process"><p id="mobile_nav_item" >How it’s made?</p></a></li>
+                    <li class="mobile-menu-item"><a href="#loved-section"><p id="mobile_nav_item" >Chocolate is loved</p></a></li>
+                </ul>
+                <ul class="mobile-menu-social">
+                    <li class="mobile-menu-link-item">
+                        <svg class="mobile-link-svg" height="20" width="20">
+                            <use href="./img/icons.svg#instagram-white"></use>
+                        </svg>
+                    </li>
+                    <li class="mobile-menu-link-item">
+                        <svg class="mobile-link-svg" height="20" width="20">
+                            <use href="./img/icons.svg#facebook-white"></use>
+                        </svg>
+                    </li>
+                    <li class="mobile-menu-link-item">
+                        <svg class="mobile-link-svg" height="20" width="20">
+                            <use href="./img/icons.svg#twitter-white"></use>
+                        </svg>
+                    </li>
+                </ul>
+        </div>
+    </div>
 </div>
