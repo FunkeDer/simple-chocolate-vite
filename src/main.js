@@ -21,17 +21,17 @@ closeModal.addEventListener("click", () => {
 
 
 
-// const mobileOpenButton = document.getElementById("mobile_open");
-// const mobileCloseButton = document.getElementById("mobile_close");
-// const mobileContainer = document.getElementById("mobile_container");
-// const mobileNavItem = document.getElementById("mobile_nav_item")
+const mobileOpenButton = document.getElementById("mobile_open");
+const mobileCloseButton = document.getElementById("mobile_close");
+const mobileContainer = document.getElementById("mobile_container");
+const mobileNavItem = document.getElementById("mobile_nav_item")
 
-// mobileOpenButton.addEventListener('click', () => {
-//   mobileContainer.style.cssText = 'display: flex; '; 
-// });
+mobileOpenButton.addEventListener('click', () => {
+  mobileContainer.style.cssText = 'display: flex; '; 
+});
 
-// function closeMobileMenu () {
-//   mobileContainer.style.cssText = 'visibility: hidden; display:none;';
-// }
-// mobileCloseButton.addEventListener('click', closeMobileMenu)
+function closeMobileMenu () {
+  mobileContainer.style.cssText = 'visibility: hidden; display:none;';
+}
+mobileCloseButton.addEventListener('click', closeMobileMenu)
 
