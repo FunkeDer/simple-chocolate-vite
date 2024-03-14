@@ -12,21 +12,29 @@ const swiper = new Swiper('.mySwiper', {
     delay: 1200,
     disableOnInteraction: true,
   },
+  
   pagination: {
     el: '.swiper-pag',
     clickable: true,
     dynamicBullets: true,
   },
   breakpoints: {
+    320:{
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
     768: {
       loop: true,
       slidesPerView: 2,
       spaceBetween: 18,
+
     },
-    1280: {
+    1136: {
       loop: true,
       slidesPerView: 3,
       spaceBetween: 25,
+
     },
   }
 });

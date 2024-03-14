@@ -35,8 +35,3 @@ closeModal.addEventListener("click", () => {
 // }
 // mobileCloseButton.addEventListener('click', closeMobileMenu)
 
-const toTopButton = document.querySelector(".up-button")
-
-toTopButton.addEventListener("click", () =>{
-  window.scrollTo(0, 0);
-})

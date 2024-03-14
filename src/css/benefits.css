@@ -1,3 +1,7 @@
+.animate__animated.animate__pulse {
+    --animate-duration: 2s;
+  }  
+
 .benefits-section{
     background-color: #1E1823;
     color: white;
@@ -35,10 +39,11 @@
 .benefits-ul-li{
     display: flex;
     flex-direction: column;
+    align-items: baseline;
+    height: 100%;
     margin-right: 44px;
     margin-left: 44px;
     width: calc((100% - 176px) / 3);
-    max-height: 244;
 }
 
 .benefits-section li:first-child{

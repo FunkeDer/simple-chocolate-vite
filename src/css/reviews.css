@@ -90,19 +90,19 @@ margin-bottom: 91px;
 }
 
 .swiper-slide {
-
     border-radius: 15px;
+    background: #FAFAFA!important;
 }
   
 .swiper-pag{
     position: relative;
 }
 
-  .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
     background-color: #FD9222;
 
-  }
+}
   
 .mySlider{
-    
+
 }
