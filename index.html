@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Simple Chocolate</title>
     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script type="module" crossorigin src="/simple-chocolate-vite/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/simple-chocolate-vite/assets/vendor-754ade45.js">
-    <link rel="stylesheet" href="/simple-chocolate-vite/assets/index-319d5bf3.css">
+    <link rel="stylesheet" href="/simple-chocolate-vite/assets/index-581926f4.css">
   </head>
   <body>
 
@@ -99,23 +103,23 @@
 
 </section>
       <section id="benefits" class="benefits-section">
-    <div class="container benefits-container">
+    <div class="container benefits-container" id="benefits-container">
         <h2 class="visually-hidden">Benefits</h2>
-    <ul class="benefits-ul">
+        <ul class="benefits-ul">
         <li class="benefits-ul-li">
-            <img src="/simple-chocolate-vite/assets/hero-chocolate-142870a7.svg" alt="hero-chocolate" width="62px" height="62px" class="benefits-img">
+            <img src="/simple-chocolate-vite/assets/hero-chocolate-142870a7.svg" alt="hero-chocolate" id="benefits-img" width="62px" height="62px" class="benefits-img animate__animated animate__delay-1s">
             <h3>Unsurpassed taste</h3>
             <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
         </li>
         <div class="vl"></div>
         <li class="benefits-ul-li">
-            <img src="/simple-chocolate-vite/assets/money-hero-aa88b93e.svg" alt="money-hero" width="62px" height="62px" class="benefits-img">
+            <img src="/simple-chocolate-vite/assets/money-hero-aa88b93e.svg" alt="money-hero" id="benefits-img" width="62px" height="62px" class="benefits-img animate__animated animate__delay-3s">
             <h3>Affordable price</h3>
             <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
         </li>
         <div class="vl"></div>
         <li class="benefits-ul-li">
-            <img src="/simple-chocolate-vite/assets/spoon-hero-05d48e0e.svg" alt="spoon-hero" width="62px" height="62px" class="benefits-img">
+            <img src="/simple-chocolate-vite/assets/spoon-hero-05d48e0e.svg" alt="spoon-hero" id="benefits-img" width="62px" height="62px" class="benefits-img animate__animated animate__delay-5s">
             <h3>Own production</h3>
             <p>We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
         </li>
@@ -267,28 +271,38 @@
     <div class="container">
     <h2><span style="color: #FD9222;">top </span>sellers</h2>
     <ul class="sellers-ul">
-        <li class="sellers-ul-li">
-            <div class="sellers-overlay">
-                <img src="/simple-chocolate-vite/assets/chocolate-with-nuts-d7f64d0e.jpg" alt="chocolate-with-nuts">
-                <div class="sellers-overlay-p">
+        <li class="sellers-ul-li card" id="sellers-ul-li">
+            <div class="card__inner">
+                <div class="card__face card__face--front">
+                    <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>
+                    <img src="/simple-chocolate-vite/assets/chocolate-with-nuts-d7f64d0e.jpg" alt="chocolate-with-nuts">
+                </div>
+                <div class="card__face card__face--back">
                     <p class="" >Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
                 </div>
-            </div>
-            <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>        
+            </div>      
         </li>
-        <li class="sellers-ul-li">
-            <div class="sellers-overlay">
-                <img src="/simple-chocolate-vite/assets/chocolate-with-fruits-9d674032.jpg" alt="chocolate-with-nuts">
-                <p class="sellers-overlay-p">Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
-            </div>
-            <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>        
+        <li class="sellers-ul-li " id="sellers-ul-li">
+            <div class="card__inner">
+                <div class="card__face card__face--front">
+                    <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>
+                    <img src="/simple-chocolate-vite/assets/chocolate-with-nuts-d7f64d0e.jpg" alt="chocolate-with-nuts">
+                </div>
+                <div class="card__face card__face--back">
+                    <p class="" >Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
+                </div>
+            </div>      
         </li>
-        <li class="sellers-ul-li">
-            <div class="sellers-overlay">
-                <img src="/simple-chocolate-vite/assets/dark-fruits-dea7e67e.jpg" alt="chocolate-with-nuts">
-                <p class="sellers-overlay-p">Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
-            </div>
-            <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>        
+        <li class="sellers-ul-li " id="sellers-ul-li">
+            <div class="card__inner">
+                <div class="card__face card__face--front">
+                    <h3 class="sellers-h3">CHOCOLATE WITH NUTS</h3>
+                    <img src="/simple-chocolate-vite/assets/chocolate-with-nuts-d7f64d0e.jpg" alt="chocolate-with-nuts">
+                </div>
+                <div class="card__face card__face--back">
+                    <p class="" >Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
+                </div>
+            </div>      
         </li>
     </ul>          
 </div> 
@@ -463,7 +477,7 @@
 </div>
 </dialog>
     <div class="up-button-container">
-    <button class="up-button" type="button"  id="myBtn">
+    <button class="up-button scroll-to-top-hidden" type="button"  id="myBtn" >
         <svg class="up-arrow" width="30" height="30" viewBox="0 0 22 22"  xmlns="http://www.w3.org/2000/svg">
             <path d="M11.6508 12.2835C11.5656 12.3694 11.4642 12.4376 11.3525 12.4842C11.2408 12.5307 11.121 12.5547 11 12.5547C10.879 12.5547 10.7592 12.5307 10.6475 12.4842C10.5358 12.4376 10.4344 12.3694 10.3492 12.2835L6.15084 8.076C6.06562 7.99008 5.96424 7.92189 5.85253 7.87535C5.74083 7.82881 5.62102 7.80485 5.50001 7.80485C5.37899 7.80485 5.25918 7.82881 5.14748 7.87535C5.03577 7.92189 4.93439 7.99008 4.84917 8.076C4.67844 8.24775 4.58261 8.48008 4.58261 8.72225C4.58261 8.96442 4.67844 9.19675 4.84917 9.3685L9.05668 13.576C9.5723 14.091 10.2713 14.3802 11 14.3802C11.7288 14.3802 12.4277 14.091 12.9433 13.576L17.1509 9.3685C17.3202 9.19776 17.4157 8.96731 17.4167 8.72684C17.4174 8.6062 17.3943 8.4866 17.3486 8.37492C17.303 8.26324 17.2358 8.16166 17.1509 8.076C17.0656 7.99008 16.9643 7.92189 16.8525 7.87535C16.7408 7.82881 16.621 7.80485 16.5 7.80485C16.379 7.80485 16.2592 7.82881 16.1475 7.87535C16.0358 7.92189 15.9344 7.99008 15.8492 8.076L11.6508 12.2835Z"/>
         </svg>
@@ -499,6 +513,9 @@
     <!-- Loads the specified .html file -->
    
 
+    
+    
+    
     
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
