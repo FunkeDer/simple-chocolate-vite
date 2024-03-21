@@ -385,7 +385,9 @@
         width: 290px;
     }
 
-   
+    .loved-ul-li{
+        width: 315px;
+    }
 
    .mobile-menu-container{
     display: flex;

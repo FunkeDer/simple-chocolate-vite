@@ -24,21 +24,22 @@ const swiper = new Swiper('.mySwiper', {
     320: {
       loop: true,
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 50,
     },
     768: {
       loop: true,
       slidesPerView: 2,
-      spaceBetween: 15,
+      spaceBetween: 50,
 
     },
     1136:{
       loop: true,
       slidesPerView: 2,
-      spaceBetween: 15,
+      spaceBetween: 50,
     },
     1137:{
-      slidesPerView: 3
+      slidesPerView: 3,
+      spaceBetween: 40,
     }
   }
 });
