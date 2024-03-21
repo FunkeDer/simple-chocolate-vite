@@ -81,7 +81,7 @@
     box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: transparent;
-    height: 68px;
+    height: 3rem;
     padding-left: 63px;
 }
 
@@ -98,7 +98,7 @@
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     width: 100%;
-    min-height: 100px;
+    min-height: 4rem;
     resize: none;
     outline: none;
 }

@@ -123,6 +123,7 @@ transition: 0.3s;
 .footer-input-container{
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .footer-input{

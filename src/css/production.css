@@ -17,7 +17,6 @@
  
  .recepie-container{
      max-width: 516px;
-     max-height: 400px;
      display: flex;
      flex-direction: column;
      border-radius: 15px;

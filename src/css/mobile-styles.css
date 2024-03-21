@@ -84,6 +84,7 @@
         display: none !important;
         opacity: 0;
         transition: opacity 0.3s ease;
+        height: -webkit-fill-available;
     }
 }
 
@@ -223,6 +224,7 @@
         z-index:  9999;
         overflow: hidden;
         flex-direction: column;
+        height: -webkit-fill-available;
      }
 
     .links{
@@ -306,7 +308,7 @@
 
     .recepie-container{
         min-width: auto;
-        max-height: 456px;
+       
     }
 
     .production-image{
@@ -326,6 +328,8 @@
     /* .loved-ul-li:first-child{
         display: none;
     } */
+
+    
 
     .footer-container{
         flex-direction: column;
@@ -361,9 +365,6 @@
 }
 
 @media (max-width: 396px){
-
-
-
     .sellers-ul-li{
         width: 290px;
     }
@@ -393,6 +394,13 @@
     display: flex;
     z-index:  9999;
     overflow: hidden;
+    height: -webkit-fill-available;
    }
+}
+
+@media screen and (min-width:320px){
+    .loved-ul-li{
+        width: auto;
+    }
 }
 

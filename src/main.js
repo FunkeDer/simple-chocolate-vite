@@ -26,7 +26,6 @@ const mobileNavItem = document.getElementById("mobile_nav_item")
 const mobileMenuItem = document.querySelectorAll(".mobile-menu-item")
 
 mobileOpenButton.addEventListener('click', () => {
-  backdrop.classList.remove('visually-hidden');
   mobileContainer.classList.add("mobile-menu-show"); 
   mobileContainer.classList.remove("visually-hidden"); 
   mobileContainer.classList.remove("mobile-menu-hidden");
@@ -34,7 +33,6 @@ mobileOpenButton.addEventListener('click', () => {
 });
 
 mobileCloseButton.addEventListener('click', () => {
-  backdrop.classList.add('visually-hidden');
   mobileContainer.classList.add("mobile-menu-hidden");
   setTimeout(function() {
     mobileContainer.classList.add("visually-hidden");
