@@ -24,7 +24,6 @@ const mobileCloseButton = document.getElementById("close-button");
 const mobileContainer = document.getElementById("mobile_container");
 const mobileNavItem = document.getElementById("mobile_nav_item")
 const mobileMenuItem = document.querySelectorAll(".mobile-menu-item")
-const backdrop = document.querySelector(".mobile-menu-backdrop")
 
 mobileOpenButton.addEventListener('click', () => {
   backdrop.classList.remove('visually-hidden');
@@ -43,10 +42,3 @@ mobileCloseButton.addEventListener('click', () => {
 }, 300); 
 document.body.classList.remove('overflow-hidden'); 
   })
-
-backdrop.addEventListener("click", () => {
-  mobileContainer.classList.add("mobile-menu-hidden");
-  mobileContainer.classList.add("visually-hidden"); 
-  mobileContainer.classList.remove("mobile-menu-show");
-  document.body.classList.remove('overflow-hidden'); 
-})

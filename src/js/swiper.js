@@ -3,11 +3,11 @@ import Swiper from 'swiper';
 import { Pagination, Autoplay } from 'swiper/modules';
 const swiper = new Swiper('.mySwiper', {
   modules: [Autoplay, Pagination],
+  direction:'horizontal',
   loop: true,
   speed: 750,
   spaceBetween: 10,
-  slidesPerView: 1,
-
+  slidesPerView: 3,
   autoplay: {
     delay: 1200,
     disableOnInteraction: true,
@@ -19,22 +19,27 @@ const swiper = new Swiper('.mySwiper', {
     dynamicBullets: true,
   },
   breakpoints: {
-    320:{
+
+
+    320: {
       loop: true,
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
     768: {
       loop: true,
       slidesPerView: 2,
-      spaceBetween: 18,
+      spaceBetween: 15,
 
     },
-    1136: {
+    1136:{
       loop: true,
-      slidesPerView: 3,
-      spaceBetween: 25,
-
+      slidesPerView: 2,
+      spaceBetween: 15,
     },
+    1137:{
+      slidesPerView: 3
+    }
   }
 });
+

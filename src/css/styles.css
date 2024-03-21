@@ -19,7 +19,7 @@
 @import url('./up-button.css');
 
 .container{
-  max-width: 1136px;
+ width: 1136px;
   padding: 0 15px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -31,4 +31,26 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+
+
+
+@media (min-width:320px) {
+  .container{
+    width: 320px;
+  }
+}
+
+
+
+@media (min-width:768px) {
+  .container{
+    width: 768px;
+  }
+}
+@media (min-width:1136px) {
+  .container{
+    width: 1136px;
+  }
 }
